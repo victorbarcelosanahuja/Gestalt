@@ -1,0 +1,82 @@
+/* COLORES DE SECCIONES */
+.color1 { background-color: #f8d7da; }
+.color2 { background-color: #d1ecf1; }
+.color3 { background-color: #d4edda; } 
+.color4 { background-color: #fff3cd; } 
+.color5 { background-color: #e2e3e5; } 
+.color6 { background-color: #cce5ff; } 
+
+section {
+  min-height: 400px;
+}
+
+/* MODO OSCURO */
+.dark-mode header {
+  background-color: #1f1f1f !important;
+}
+.dark-mode header h1 {
+  color: #fff;
+}
+.dark-mode button {
+  color: #fff !important;
+  border-color: #ffffff !important;
+}
+.dark-mode footer {
+  background-color: #1f1f1f !important;
+}
+.dark-mode footer p {
+  color: #fff;
+}
+.dark-mode header .nav-link {
+  color: #ffffff !important;
+}
+
+/* Scroll suave */
+html {
+  scroll-behavior: smooth;
+}
+
+/* PARALLAX */
+.parallax-section {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 500px;
+  position: relative;
+}
+
+/* Capa oscura para legibilidad del texto */
+.parallax-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.216);
+}
+
+.parallax-section > div {
+  position: relative;
+  z-index: 1;
+}
+
+#figura-fondo {
+  background-image: url("../img/fondo.jpeg");
+}
+
+#destino {
+  background-image: url("../img/sea1.jpg");
+}
+.my-img {
+  width: 100%;       /* Ocupa todo el ancho del contenedor */
+  max-width: 400px;  /* Máximo ancho para que no se haga gigante */
+  height: auto;      /* Mantiene la proporción de la imagen */
+  display: block;    /* Centra la imagen correctamente */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav-link.active {
+  color: var(--color-principal) !important;
+  font-weight: bold;
+  border-bottom: 2px solid var(--color-principal);
+}
